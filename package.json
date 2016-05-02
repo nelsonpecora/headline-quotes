@@ -1,6 +1,6 @@
 {
   "name": "headline-quotes",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Smart quotes for headlines! Follows the AP Style Guide",
   "main": "dist/index.js",
   "jsnext:main": "src/index.js",
