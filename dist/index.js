@@ -100,3 +100,5 @@ function appendPlurals(str) {
 function unmatchedQuotes(str) {
   return str.replace(/(^|\s)['"](.*?)/gi, '$1' + l + '$2');
 }
+
+module.exports = exports['default'];
