@@ -80,8 +80,22 @@ function appendPlurals(str) {
   return str.replace(/(s)'(\s|$)/gi, `$1${a}$2`);
 }
 
-function unmatchedQuotes(str) {
+/**
+ * curl any unmatched left quotes
+ * @param {string} str
+ * @returns {string}
+ */
+function unmatchedLeftQuotes(str) {
   return str.replace(/(^|\s)['"](.*?)/gi, `$1${l}$2`);
+}
+
+/**
+ * finally, curl any unmatched right quotes
+ * @param {string} str
+ * @returns {string}
+ */
+function unmatchedRightQuotes(str) {
+  return str.replace(/(.*?)['"](\s|$)/gi, `$1${r}$2`);
 }
 
 export default function (str) {
@@ -92,6 +106,7 @@ export default function (str) {
   str = quote(str);
   str = appendWhitelist(str);
   str = appendPlurals(str);
-  str = unmatchedQuotes(str);
+  str = unmatchedLeftQuotes(str);
+  str = unmatchedRightQuotes(str);
   return str;
 }

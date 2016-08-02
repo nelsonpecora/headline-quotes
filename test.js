@@ -48,6 +48,7 @@ describe('headline-quotes', function () {
 
   it('renders single quotes in headlines', function () {
     expect(quote('\'Hello World\' Reports New AI')).to.equal(`${l}Hello World${r} Reports New AI`);
+    expect(quote('Hackers Program Terrifying Message Into Highway Sign: \'Poop\'')).to.equal(`Hackers Program Terrifying Message Into Highway Sign: ${l}Poop${r}`)
   });
 
   it('renders double quotes in headlines', function () {
