@@ -48,7 +48,7 @@ describe('headline-quotes', function () {
 
   it('renders single quotes in headlines', function () {
     expect(quote('\'Hello World\' Reports New AI')).to.equal(`${l}Hello World${r} Reports New AI`);
-    expect(quote('Donald Trump Calls Hillary Clinton the \'Devil\'')).to.equal(`Donald Trump Calls Hillary Clinton the ${l}Devil${r}`)
+    expect(quote('Hackers Program Terrifying Message Into Highway Sign: \'Poop\'')).to.equal(`Hackers Program Terrifying Message Into Highway Sign: ${l}Poop${r}`)
   });
 
   it('renders double quotes in headlines', function () {
