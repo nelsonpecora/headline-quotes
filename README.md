@@ -1,5 +1,7 @@
 # headline-quotes
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/nelsonpecora/headline-quotes.svg)](https://greenkeeper.io/)
+
 [![Circle CI](https://circleci.com/gh/yoshokatana/headline-quotes.svg?style=svg)](https://circleci.com/gh/yoshokatana/headline-quotes)
 
 🗒 Smart quotes for headlines! Follows the AP Style Guide
